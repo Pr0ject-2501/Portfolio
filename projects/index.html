@@ -65,18 +65,47 @@ td:hover{
     
 }
 
+button{
+    border: none;
+    background: none;
+    font-size: 3vw;
+    
+}
+
 
 
 </style>
 <body>
 
-    <h1><a href="/index.html">Home</a></h1>
+    <script>
+
+function myFunc() {
+  var disp = document.getElementById("AngleMort").style.display;
+  console.log(disp);
+  if (disp == 'table-row') {
+    document.getElementById("AngleMort").style.display = 'none'
+  } else {
+    document.getElementById("AngleMort").style.display = 'table-row'
+  }
+  console.log()
+}
+    </script>
+
+    <h1><a href="/Portfolio/index.html">Home</a></h1>
 
     <table>
 
         <tr>
             <th>2024</th>
-            <td><a href="">AngleMort Studio</a></td>
+            <td><button onclick="myFunc()">AngleMort Studio</button></td>
+        </tr>
+
+        <tr id="AngleMort" style="display: none; font-size: 2vw;">
+            <th></th>
+            <td>Création et déploiement d'une identité visuelle pour le studio de design artisanal Angle Mort.
+                Réalisation d'une typographie variable et d'un logotype issu de celle-ci.
+                <img src="/dist/public/{CDDA8817-3577-4A08-9E0A-83DFE6B5F07A}.png.jpg">
+            </td>
         </tr>
 
         <tr>
@@ -85,7 +114,7 @@ td:hover{
         </tr>
 
         <tr>
-            <th>2023</th>
+            <th></th>
             <td><a href="">AKIRA, logo</a></td>
         </tr>
 

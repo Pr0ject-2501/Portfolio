@@ -116,6 +116,15 @@ function Akira() {
   } else {
     document.getElementById("Akira").style.display = 'table-row'
   }
+
+  function Ghost() {
+  var disp = document.getElementById("Ghost").style.display;
+  console.log(disp);
+  if (disp == 'table-row') {
+    document.getElementById("Ghost").style.display = 'none'
+  } else {
+    document.getElementById("Ghost").style.display = 'table-row'
+  }
   
 }
     </script>
@@ -154,7 +163,7 @@ function Akira() {
         </tr>
 
         <tr>
-            <th>2023</th>
+            <th></th>
             <td><button onclick="Akira()">AKIRA, logo</button></td>
         </tr>
 
@@ -168,7 +177,16 @@ function Akira() {
 
         <tr>
             <th></th>
-            <td><a href="">Ghostwriters, Design éditorial et CD</a></td>
+            <td><button onclick="Ghost()">GHOSTWRITERS, Design éditorial et CD</button></td>
+        </tr>
+
+        <tr id="Ghost" style="display: none; font-size: 2vw;">
+            <th></th>
+            <td><p>Travail éditoriale avec GHOSTWRITERS, un duo d'artistes belges, sur les questions de résonnances
+                mémorielles dans l'intimité des protagonistes. Création des visuels et du CD accompagnant l'édition.
+            </p>
+                <img src="/Portfolio/public/cd.jpg"><img src="/Portfolio/public/ribbon_roll.jpg">
+                <img src="/Portfolio/public/Ghost1.jpg"><img src="/Portfolio/public/Ghost2.jpg"></td>
         </tr>
 
         <tr>

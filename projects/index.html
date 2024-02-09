@@ -86,13 +86,35 @@ img{
 
     <script>
 
-function myFunc() {
-  var disp = document.getElementById("show").style.display;
+function AngleMort() {
+  var disp = document.getElementById("Angle").style.display;
   console.log(disp);
   if (disp == 'table-row') {
-    document.getElementById("show").style.display = 'none'
+    document.getElementById("Angle").style.display = 'none'
   } else {
-    document.getElementById("show").style.display = 'table-row'
+    document.getElementById("Angle").style.display = 'table-row'
+  }
+  
+}
+
+function History() {
+  var disp = document.getElementById("History").style.display;
+  console.log(disp);
+  if (disp == 'table-row') {
+    document.getElementById("History").style.display = 'none'
+  } else {
+    document.getElementById("History").style.display = 'table-row'
+  }
+  
+}
+
+function Akira() {
+  var disp = document.getElementById("Akira").style.display;
+  console.log(disp);
+  if (disp == 'table-row') {
+    document.getElementById("Akira").style.display = 'none'
+  } else {
+    document.getElementById("Akira").style.display = 'table-row'
   }
   
 }
@@ -104,10 +126,10 @@ function myFunc() {
 
         <tr>
             <th>2024</th>
-            <td><button onclick="myFunc()">AngleMort Studio</button></td>
+            <td><button onclick="AngleMort()">AngleMort Studio</button></td>
         </tr>
 
-        <tr id="show" style="display: none; font-size: 2vw;">
+        <tr id="Angle" style="display: none; font-size: 2vw;">
             <th></th>
             <td><p>Création et déploiement d'une identité visuelle pour le studio de design artisanal Angle Mort.
                 Réalisation d'une typographie variable et d'un logotype issu de celle-ci.</p>
@@ -116,8 +138,13 @@ function myFunc() {
             </td>
         </tr>
 
-        <tr id="show" style="display: none; font-size: 2vw;">
+        <tr>
             <th>2023</th>
+            <td><button onclick="History()">History is a belief ?</button></td>
+        </tr>
+
+        <tr id="History" style="display: none; font-size: 2vw;">
+            <th></th>
             <td><p>Exposition de Master Arts autour de questions liés à l'histoire coloniale française et son actualité.
                 Composée de trois pièces majeures, dont deux installations et une installation vidéo 3D, l'ensemble nous
                 invite à nous questionner sur notre connaissance des politiques hors métropole passée et actuelle.
@@ -127,8 +154,16 @@ function myFunc() {
         </tr>
 
         <tr>
+            <th>2023</th>
+            <td><button onclick="Akira()">AKIRA, logo</button></td>
+        </tr>
+
+        <tr id="Akira" style="display: none; font-size: 2vw;">
             <th></th>
-            <td><a href="">AKIRA, logo</a></td>
+            <td><p>Rebranding du groupe Akira et le Shabbat, création d'un logotype et application sur merch.
+            </p>
+                <img src="/Portfolio/public/nouveau logo.jpg"><img src="/Portfolio/public/Akira red.jpg">
+                <img src="/Portfolio/public/Akira green.jpg"><img src="/Portfolio/public/Akira white.jpg"></td>
         </tr>
 
         <tr>

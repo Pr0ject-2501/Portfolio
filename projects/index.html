@@ -58,6 +58,12 @@ td{
     align-items: center;
     border-bottom: 3px solid;
     width: 70vw;
+    display: block;
+}
+
+p{
+
+    font-display: block;
 }
 
 button{
@@ -70,7 +76,7 @@ button{
 img{
     width: 30vw;
     margin: 2vw;
-    float: left;
+    float: none;
 }
 
 
@@ -81,14 +87,14 @@ img{
     <script>
 
 function myFunc() {
-  var disp = document.getElementById("AngleMort").style.display;
+  var disp = document.getElementById("show").style.display;
   console.log(disp);
   if (disp == 'table-row') {
-    document.getElementById("AngleMort").style.display = 'none'
+    document.getElementById("show").style.display = 'none'
   } else {
-    document.getElementById("AngleMort").style.display = 'table-row'
+    document.getElementById("show").style.display = 'table-row'
   }
-  console.log()
+  
 }
     </script>
 
@@ -101,18 +107,23 @@ function myFunc() {
             <td><button onclick="myFunc()">AngleMort Studio</button></td>
         </tr>
 
-        <tr id="AngleMort" style="display: none; font-size: 2vw;">
+        <tr id="show" style="display: none; font-size: 2vw;">
             <th></th>
-            <td>Création et déploiement d'une identité visuelle pour le studio de design artisanal Angle Mort.
-                Réalisation d'une typographie variable et d'un logotype issu de celle-ci.
+            <td><p>Création et déploiement d'une identité visuelle pour le studio de design artisanal Angle Mort.
+                Réalisation d'une typographie variable et d'un logotype issu de celle-ci.</p>
                 <img src="/Portfolio/public/logo.jpg"><img src="/Portfolio/public/Séquence 02.gif">
                 
             </td>
         </tr>
 
-        <tr>
+        <tr id="show" style="display: none; font-size: 2vw;">
             <th>2023</th>
-            <td><a href="">History is a belief ?</a></td>
+            <td><p>Exposition de Master Arts autour de questions liés à l'histoire coloniale française et son actualité.
+                Composée de trois pièces majeures, dont deux installations et une installation vidéo 3D, l'ensemble nous
+                invite à nous questionner sur notre connaissance des politiques hors métropole passée et actuelle.
+            </p>
+                <img src="/Portfolio/public/arbre.jpg"><img src="/Portfolio/public/aquarium.jpg">
+                <img src="/Portfolio/public/install.jpg"><img src="/Portfolio/public/history.jpg"></td>
         </tr>
 
         <tr>
